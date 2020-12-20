@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CardApp</string>
+    <string name="init_dev">Init Device</string>
+    <string name="set_m1card_test">M1Card_Test</string>
+    <string name="set_cpucard_test">CPUCard_Test</string>
+    <string name="reset_card">reset card</string>
+    <string name="read_card">Read</string>
+    <string name="read_card_setting">Read the card operation</string>
+    <string name="write_card">Write</string>
+    <string name="write_card_setting">Write the card operation</string>
+
+    <string name="hint_read_card_sector">(int)input the sector you want to read</string>
+    <string name="hint_read_index">(int)input which block of the read sector</string>
+    <string name="hint_read_key"> input the key to read the card, default is 12 F</string>
+
+    <string name="hint_write_card_sector">(int)input the sector you want to write</string>
+    <string name="hint_write_index">(int)input which block to write to the sector</string>
+    <string name="hint_write_key_type"> input the key type (Hexadecimal) of the read-write card, default is 0x0b</string>
+    <string name="hint_write_key">input the key to write the card, default is 12 F</string>
+
+
+    <string name="not_find_card">not find the card !</string>
+    <string name="encryption_failed">Encryption failed!</string>
+    <string name="writing_successfully">Writing successfully !</string>
+    <string name="cpu_encrypt">CPUCard_encrypt</string>
+    <string name="m1_encrypt">M1Card_encrypt</string>
+    <string name="write_cpu_empty">Data entered is not empty</string>
+    <string name="calcu_card_mac">Calculate MacOfCPUcard</string>
+    <string name="send_card_cmd">File Selection</string>
+    <string name="show_card_mac_value">The MacOfCard is:&#160;%1$s&#160;</string>
+    <string name="show_card_cpu_consume">CheckOfResult is:&#160;%1$s&#160;</string>
+    <string name="cpu_check">CheckCPUCard</string>
+    <string name="cpu_cmd">ResultOfReceive is: </string>
+    <string name="hint_enter_consume_fee">input consumption amount</string>
+    <string name="show_card_remain_fee">BalanceOfCard is:&#160;%1$s&#160;</string>
+
+    <string name="QR_code_Button">QR_code_Test</string>
+    <string name="tts_test">TTS Test</string>
+    <string name="tts">hello TTS Test</string>
+    <string name="signal_receiver">low output</string>
+    <string name="relay_high">high output</string>
+</resources>

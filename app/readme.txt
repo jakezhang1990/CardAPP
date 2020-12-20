@@ -1,0 +1,1 @@
+此代码为一屏双显的demo 版本，注意在文件src 文件夹下以××demo××.java 的才是demo 展示的类，由于我的其他版本代码也写了一部分在这里，没有特别的区分开来，因此特别说明。 如果不你会创建工程，那么你可以直接checkout TwoShowInOneScreen.zip 文件下来，解压，然后导入到你的 Android Studio 工具中，这里有几点特别说明：1.android studio 的版本为3.0.1。2.gradle 的版本为4.1。 3.请用sdk manager 下载CMake。  其他的问题可以通过百度找到。
