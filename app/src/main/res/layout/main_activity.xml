@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -56,42 +60,44 @@
 
     <!--lbl2-->
     <TextView
-        android:visibility="gone"
+
         android:id="@+id/lbl2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2、读"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl1_btn"/>
 
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl2_sector_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="输入扇区号0-15"
         android:textSize="16sp"
         android:maxLength="2"
+        android:inputType="number"
         android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl2"/>
 
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl2_index_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="输入块号0-3"
+        android:inputType="number"
         android:textSize="16sp"
         android:maxLength="1"
         android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl2_sector_Editv"/>
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl2_key_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@id/lbl2_index_Editv"/>
 
     <RadioGroup
-        android:visibility="gone"
+
         android:id="@+id/lbl2_keyTypeRG"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -129,6 +135,28 @@
             android:layout_height="wrap_content"
             android:text="B类型秘钥"/>
     </RadioGroup>
+
+    <Button
+        android:id="@+id/lbl2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl2_keyTypeRG"/>
+
+    <TextView
+        android:id="@+id/lbl2_read_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="readResult:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/lbl2_btn"
+        app:layout_constraintTop_toTopOf="@id/lbl2_btn"
+        app:layout_constraintBottom_toBottomOf="@id/lbl2_btn"/>
+
+
 <!--lbl3-->
     <TextView
         android:id="@+id/lbl3"
@@ -140,7 +168,7 @@
         android:textColor="@color/colorPrimaryDark"
 
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lbl2_keyTypeRG"/>
+        app:layout_constraintTop_toBottomOf="@id/lbl2_btn"/>
     <EditText
         android:id="@+id/lbl3_index_Editv"
         android:layout_width="match_parent"
@@ -194,19 +222,19 @@
 
     <!--lbl4-->
     <TextView
-        android:visibility="gone"
+
         android:id="@+id/lbl4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4、写卡"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl3_btn"/>
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl4_sector_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -218,7 +246,7 @@
         app:layout_constraintTop_toBottomOf="@id/lbl4"/>
 
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl4_index_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -229,7 +257,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl4_sector_Editv"/>
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl4_key_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -241,7 +269,7 @@
         app:layout_constraintTop_toBottomOf="@id/lbl4_index_Editv"/>
 
     <RadioGroup
-        android:visibility="gone"
+
         android:id="@+id/lbl4_keyTypeRG"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -269,7 +297,7 @@
     </RadioGroup>
 
     <EditText
-        android:visibility="gone"
+
         android:id="@+id/lbl4_write_data_Editv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -280,7 +308,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lbl4_keyTypeRG"/>
     <Button
-        android:visibility="gone"
+
         android:id="@+id/lbl4_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -290,7 +318,7 @@
         app:layout_constraintTop_toBottomOf="@id/lbl4_write_data_Editv"/>
 
     <TextView
-        android:visibility="gone"
+
         android:id="@+id/lbl4_write_result_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -300,3 +328,4 @@
         app:layout_constraintBottom_toBottomOf="@id/lbl4_btn"/>
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
